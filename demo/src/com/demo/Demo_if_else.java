@@ -1,19 +1,17 @@
 package com.demo;
 
 public class Demo_if_else {
-	public static void main(String[]args) {
-       int age = 23;
-       {
+	
+		public static void main(String[]args) {
 			
-			if(age>=18) {
-				System.out.println("Eligible for vote");
+			int number = 45;
+			
+			if(number%2==0) {
+				System.out.println(" Number is even");
 			}
 			else {
-				System.out.println("Not eligible for vote");
+				System.out.println("Number is odd");
 			}
 		}
 	}
-
-	}
-
 
