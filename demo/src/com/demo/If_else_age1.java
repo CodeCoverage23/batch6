@@ -33,7 +33,7 @@ public static void main(String[]args) {
 		}
 		else if(age>=75)
 		{
-			System.out.println("Your weight should be 32.7");
+			System.out.println("Your weight should be 32.8");
 		}
 		
 		}
