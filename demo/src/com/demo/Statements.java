@@ -3,30 +3,32 @@ package com.demo;
 import java.util.*;
 
 public class Statements{
-	
 	public static void main(String[] args) {
-		
+	 
 		Scanner sc=new Scanner(System.in);
 		
-		 System.out.println("Enter the age of student"); 
-		//Describe those student who are eligible to vote above 18
-		 int student=sc.nextInt();
-		 
+		System.out.println("enter the name ");
+		String name =sc.next();
+		System.out.println("enter the marks");
+		int marks=sc.nextInt();
+		if(marks>=80 && marks<= 90)
 		
-		int Student=18;
-		
-		if(student>18) {
-			
-			System.out.println(" eligible to vote");
-			
-		}
-		else {
-			System.out.println("not eligible to vote");
+		{
+			System.out.println("Grade A+");
 		}
 		
+		else if(marks>=70 && marks<=60)
+		{
+		System.out.println("Grade B");}
+		
+		else if(marks>=40 && marks<=50)
+		{
+			System.out.println("Grade c");
+			
+		}else{System.out.println(" error");}
 		
 	}
-	
-	
-	
 }
+
+	
+	
