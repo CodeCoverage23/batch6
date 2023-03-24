@@ -41,13 +41,19 @@ public class Ifelse {
 			{
 				System.out.println("Child Ager");
 			}
+			else if (age>=70 && age<80)
+			{
+				System.out.println("Super Senior Citizen");
+			}
+			}
 		}
+	
 		
 				
 		
-		// TODO Auto-generated method stub
+		
 
-	}
+	
 
 
 
