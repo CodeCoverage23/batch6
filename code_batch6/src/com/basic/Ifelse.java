@@ -35,11 +35,11 @@ public class Ifelse {
 			}
 			else if(age>=5 && age<13) 
 			{
-				System.out.println("Kid Ager");
+				System.out.println("Kid ");
 			}
 			else if(age>0 && age<5) 
 			{
-				System.out.println("Child Ager");
+				System.out.println("Child ");
 			}
 			else if (age>=70 && age<80)
 			{
