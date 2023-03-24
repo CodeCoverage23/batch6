@@ -12,7 +12,7 @@ public class ScannerClass1 {
 				System.out.println("enter student id");
 				int id =sc.nextInt();
 				
-				System.out.println("enter a name");
+				System.out.println("Enter a Name");
 				String name=sc.next();
 				
 				System.out.println("enter a marks :");
