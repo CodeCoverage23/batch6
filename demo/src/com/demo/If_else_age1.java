@@ -21,7 +21,7 @@ public static void main(String[]args) {
 		}
 		else if(age>=45 && age<54)
 		{
-			System.out.println("Your weight should be 42.9");
+			System.out.println("Your weight should be 42.8");
 		}
 		else if(age>=55 && age<64)
 		{
