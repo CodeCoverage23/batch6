@@ -21,14 +21,14 @@ public class If_else_ladder {
 		
 		else if(marks>=70 && marks<80) {
 			
-			System.out.println("Grade B");
+			System.out.println("Grade B++");
 		}
 		else if(marks>=60 && marks<70) {
-			System.out.println("Grade C");
+			System.out.println("Grade B");
 		}
 		else if(marks>=50 && marks<60)
 		{
-			System.out.println("Grade D");
+			System.out.println("Grade C");
 		}
 		else {
 			System.out.println("Student is Failed");
