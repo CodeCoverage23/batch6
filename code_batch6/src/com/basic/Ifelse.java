@@ -45,8 +45,13 @@ public class Ifelse {
 			{
 				System.out.println("Super Senior Citizen");
 			}
+			else 
+			{
+				System.out.println("invalid age");
 			}
-		}
+			}
+			}
+		
 	
 		
 				
