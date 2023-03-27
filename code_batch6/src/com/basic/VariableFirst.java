@@ -6,6 +6,7 @@ public class VariableFirst {
 		// TODO Auto-generated method stub
 int a = 10;
 System.out.println("a = "+a);
+System.out.println("b");
 	}
 
 }
