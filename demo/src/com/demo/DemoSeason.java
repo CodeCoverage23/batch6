@@ -20,7 +20,7 @@ public class DemoSeason {
 		case "July" :
 		case "August" :
 		case "September":
-			System.out.println("rainy");
+			System.out.println("Rainy");
 			break;
 			
 		case "Octomber" :
