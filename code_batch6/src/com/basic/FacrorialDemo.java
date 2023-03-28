@@ -15,7 +15,7 @@ public class FacrorialDemo {
 		        	 a=a*i;//facrorial number a*a
 		             i++;
 		        }
-		// TODO Auto-generated method stub
+
 System.out.println("Factorial of the number "+a);
 	}
 
