@@ -3,7 +3,6 @@ package com.demo;
 import java.util.Scanner;
 
 public class Ifelse_Age_program {
-	
 
        public static void main (String[]args) {
     	 
@@ -50,9 +49,9 @@ public class Ifelse_Age_program {
    			{
    	        System.out.println("Child Ager");
  		
-    	 
- 				
- 			}
     	   
-       }
+       } 
+   			else {System.out.println("Invalide age");
+   			}
+   	  }
 }
