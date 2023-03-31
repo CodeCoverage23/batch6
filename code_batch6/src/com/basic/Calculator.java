@@ -6,9 +6,9 @@ public class Calculator {
 
 	public static void main(String[] args) {
 		Scanner ak=new Scanner(System.in);
-		System.out.println("Enter First Number : ");
+		System.out.println("Enter first Number : ");
 		int a = ak.nextInt();
-		System.out.println("Enter Second Number : ");
+		System.out.println("Enter second Number : ");
 		int b=ak.nextInt();
 		Calculator(a,b);
 	}
