@@ -9,7 +9,7 @@ public class FactorialNumber {
 		Scanner sc= new Scanner (System.in);
 		System.out.println("Enter the Number");
 		int n = sc.nextInt();
-		
+//		int n = 5;
 		int i;
 		int fact=1;
 		
