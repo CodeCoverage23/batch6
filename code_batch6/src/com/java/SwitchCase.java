@@ -10,7 +10,7 @@ public class SwitchCase {
 		case 16:
 			System.out.println("under 18");
 			break;
-		case 18:
+		case 18: 
 			System.out.println("Eligible for vote");
 			break;
 		case 65:
