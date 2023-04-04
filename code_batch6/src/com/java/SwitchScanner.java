@@ -12,7 +12,7 @@ public class SwitchScanner {
 
 		//System.out.println("Student name :");
 
-		Scanner scanner = new Scanner(System.in);
+		Scanner scanner= new Scanner(System.in);
 
 		int rollnumber = scanner.nextInt();
 
