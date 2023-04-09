@@ -10,8 +10,8 @@ public class Student1 {
 	}
 	
 	public static void main(String[]args) {
-		Student1 ss=new Student1("Gauri"+ss);
-		System.out.println(ss);
+		Student1 s=new Student1("Gauri");
+		System.out.println(s);
 				
 	}
 
