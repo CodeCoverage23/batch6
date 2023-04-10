@@ -2,28 +2,24 @@ package Assignment3;
 
 public class StringName {
 	
-	String studentname;
-	
-public StringName ( String studentname) {
+public String getstudentName ( String studentname) { //Separate method
 		
-	      this.studentname=studentname;
+	    return studentname;
+	    
 		}
 	
 		
 public static void main(String[] args) {
 	
-	StringName s1 = new StringName("sakshi");
+	StringName s1 = new StringName(); //object create
 	
-		System.out.println(s1);
+		System.out.println(s1.getstudentName("Sakshi"));
 	
     }
 
 
-@Override
-public String toString() {
-	return "StringName [studentname=" + studentname + "]";
+
 }
 
 
-}
 
