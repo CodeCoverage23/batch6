@@ -2,26 +2,24 @@ package com.Assignment4;
 
 public class AllProblem {
 	
-	int a=30;
-	int b=15;
 	
-	public int additon() {
+	public int additon(int a,int b) {
 		
 		int c=a+b;
 		return c;
 		}
 
-public int substraction() {
+public int substraction(int a,int b) {
 	
 	int d=a-b;
 	return d;
 	}
-public int multiplication() {
+public int multiplication(int a,int b) {
 	
 	int e=a*b;
 	return e;
 	}
-public int division() {
+public int division(int a,int b) {
 	
 	int f=a/b;
 	return f;
@@ -31,10 +29,10 @@ public int division() {
 		
 		AllProblem A=new AllProblem();
 	
-		System.out.println("Addition: "+A.additon());
-		System.out.println("substraction: "+A.substraction());
-		System.out.println("multiplication: "+A.multiplication());
-		System.out.println("division: "+A.division());
+		System.out.println("Addition: "+A.additon(5,5));
+		System.out.println("substraction: "+A.substraction(10,5));
+		System.out.println("multiplication: "+A.multiplication(10,5));
+		System.out.println("division: "+A.division(10,5));
 		
 
 	}

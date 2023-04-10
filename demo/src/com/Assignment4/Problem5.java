@@ -23,6 +23,7 @@ public class Problem5 {
 		System.out.println("Enter the marks of Sanskrit :");
 		
 		double A=a+b+c+d+e;
+		System.out.println("Total Marks"+A);
 		
 		double B=A/5;
 		System.out.println("Average of all the subject  "+B);
