@@ -3,20 +3,15 @@ package com.assignment3;
 public class Student {
 	String Studentname;
 
-	public Student(String studentname) {
-		super();
-		Studentname = studentname;
+	public String getStudent(String name) {
+		return name;
 	}
+
 
 	public static void main(String[] args) {
-		Student ak = new Student("Avinash");
-		System.out.println(ak);
-
+		Student ak = new Student();
+		System.out.println(ak.getStudent("Avinash"));
 	}
-
-	@Override
-	public String toString() {
-		return "Student [Studentname=" + Studentname + "]";
-	}
-
 }
+	
+	
