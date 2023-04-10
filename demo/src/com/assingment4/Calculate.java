@@ -10,9 +10,10 @@ public class Calculate {
 		double chemistry = 77;
 		double english = 80;
 		double hindi = 99;
+		double total = maths + physics + chemistry + english + hindi;
+		double average = ( total )/5;
 		
-		double average = (maths + physics + chemistry + english + hindi  )/5;
-		
-		System.out.println("The average of five subject is : " + average);
+		System.out.println("The total of five subject is : " + total);
+		System.out.println("Average  : " + average);
 	}
 }
