@@ -11,10 +11,10 @@ public class PositiveNegativeNumber {
 		 int num= sc.nextInt();
   System.out.println("Enter number");
   
-  if(num>0) {
+  if(num>2) {
 	  System.out.println("number is positive");
   }
-  else if(num<0 ) {
+  else if(num<2 ) {
 	  System.out.println("number is negative");
   }
   
