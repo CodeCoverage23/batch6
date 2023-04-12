@@ -10,7 +10,7 @@ public class Multiplication  {
 		// TODO Auto-generated method stub
      Multiplication multiplication = new Multiplication();
      int sum = multiplication.getMultiplication(25, 45); 
-     System.out.println("multiplication of two numbers: " + sum );
+     System.out.println("multiplication of two numbers: " + sum);
 	}
 
 }
