@@ -17,14 +17,19 @@ public class DemoArray {
 
 		int a[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90 };
 
-		//By old for loop
+		// By old for loop
 		for (int i = 0; i < a.length; i++) {
-			System.out.println("By Old for loop : " + a[i]);
+			int b = a[i] + 1;
+			System.out.println("By Old for loop : " + b);
+
 		}
+
+		System.out.println("***********************************************");
 
 		// By For each loop
 		for (int b : a) {
-			System.out.println("By New for loop : " + b);
+			int c = b * 2;
+			System.out.println("By New for loop : " + c);
 		}
 
 	}
