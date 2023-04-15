@@ -1,25 +1,16 @@
 package com.basic;
 
 public class Demo {
-
+	Demo getobject() {
+		return this;
 }
-
-class Class1 {
-
-}
-
-class Class2 {
-
-}
-
-class Class3 {
-
-}
-
-class Class4 {
-
-}
-
-class Class5 {
+	public void m1()
+	{
+		System.out.println("object call");
+	}
+	public static void main(String[] args) {
+		new Demo().getobject().m1();
+	}
+	
 
 }
