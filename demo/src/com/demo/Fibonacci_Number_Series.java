@@ -1,8 +1,9 @@
 package com.demo;
 
 import java.util.Scanner;
-//fibonacci series means upper two value's sum =  third value
-//ex: 0,1=1 : then second no. 1,1=2 :  1,2=3 
+/*fibonacci series means upper two value's sum =  third value . it always start from 0& 1.
+ex: 0,1=1 : then second no. 1,1=2 :  1,2=3 */
+
 public class Fibonacci_Number_Series {
 	public static void main(String[] args) {
 		 // this example is for no. of terms how much we want.

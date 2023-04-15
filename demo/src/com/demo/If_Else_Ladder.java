@@ -22,8 +22,10 @@ public class If_Else_Ladder {
 			System.out.println("According to your age you are in Junior College");
 		}else if(age>=19 && age<=22){
 			System.out.println("According to your age you are in graduation");
-		}else  {
+		}else if(age>23 && age<=50) {
 			System.out.println("Now You are ready for Job");
+		}else {
+			System.out.println("Invalid age.");
 		}
 		
 	}

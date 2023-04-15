@@ -19,19 +19,15 @@ public class ConstructorDemo {
 		this.Address = address;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "ConstructorDemo [clss=" + clss + ", Name=" + Name + ", Rollno=" + Rollno + ", stream=" + stream
-//				+ ", CollegeName=" + CollegeName + ", Address=" + Address + "]";
-//	}
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		ConstructorDemo c = new ConstructorDemo(10, "Mansi",12,"science","VBMV","AMT");
 
-		System.out.println("class="+ c.clss + " Name =" + c.Name);
-//		System.out.println(c.Name);
+		System.out.println(c.clss);
+		System.out.println(c.Name);
 		System.out.println(c.Rollno);
 		System.out.println(c.stream);
 		System.out.println(c.CollegeName);

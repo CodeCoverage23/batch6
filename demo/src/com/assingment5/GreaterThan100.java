@@ -9,9 +9,11 @@ public class GreaterThan100 {
 		Scanner sc = new Scanner(System.in);
 		double n = sc.nextDouble();
 
-		if (n <= 100) {
+		if (n < 100) {
 			System.out.println("The Number is less than 100");
-		} else {
+		} else if (n==100){
+			System.out.println("The Number is equal to 100");
+		}else {
 			System.out.println("The Number is greater than 100");
 		}
 	}
