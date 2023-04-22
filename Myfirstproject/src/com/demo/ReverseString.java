@@ -1,0 +1,22 @@
+package com.demo;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		
+	String name = "sakshi";
+	System.out.println("string before reverse : "+ name);
+	int length = name.length();
+	String rev = "";
+	
+	for(int i=length-1;i>=0;i--) {
+		rev=rev+name.charAt(i);
+		
+	}
+	System.out.println("string after reverse : "+rev);
+	
+	
+
+	}
+
+}
