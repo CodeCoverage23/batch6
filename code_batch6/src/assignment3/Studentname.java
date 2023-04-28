@@ -11,7 +11,8 @@ public class Studentname {
 		Studentname s=new Studentname();
 		System.out.println(s.getStudentname("vaishnavi"));
 		// TODO Auto-generated method stub
-
+ 
+		
 	}
 
 }
