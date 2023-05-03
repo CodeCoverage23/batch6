@@ -1,6 +1,8 @@
 package com.demo;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.sql.SQLException;
 
 //case 1: if parent class method declare any exception then the child class  method can declare 
 //same,child class exception or nothing .

@@ -13,7 +13,7 @@ public class ThrowDemo2 {
 
 	FileReader fileReader;
 	try {
-		fileReader = new FileReader("c\\Users\\pradeep.text");
+		fileReader = new FileReader("c:\\Users\\pradeep.text");
 		BufferedReader bufferedReader = new BufferedReader(fileReader);
 		throw new FileNotFoundException("existing file not available");     
 	} catch (FileNotFoundException e) {
