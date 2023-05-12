@@ -10,7 +10,8 @@ public class CollectionDemo {
 		// TODO Auto-generated method stub
 
 		ArrayList<Student> al =new ArrayList<>();
-		al.add(new Student(101,"pradeep","extc",27 ));
+
+		al.add( new Student(101,"pradeep","extc",27));
 		al.add(new Student(102,"akush","it",25 ));
 		al.add(new Student(103,"anushka","cs",26 ));
 		al.add(new Student(104,"dipak","extc",30 ));
