@@ -7,7 +7,7 @@ public class Student {
 	 int studentAge;
 	static String collegename="DRGITR";
 	
-	 public Student( int Id , String name,String field, int Age){
+	public Student( int Id , String name,String field, int Age){
 		this.studentAge = Age;
 		 this.studentId=Id;
 		 this.studentname=name;
