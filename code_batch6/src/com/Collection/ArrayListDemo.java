@@ -7,6 +7,7 @@ public class ArrayListDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         ArrayList al=new ArrayList();
+        
         al.add("Avinash");
         al.add(1254);
         al.add(15.04);

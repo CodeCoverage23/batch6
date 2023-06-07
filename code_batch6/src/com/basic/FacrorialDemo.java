@@ -12,7 +12,7 @@ public class FacrorialDemo {
 		        int i=1,a=1;
 		        while(i<=no)
 		        {
-		        	 a=a*i;//facrorial number a*a
+		        	 a=a*i;//factorial number a*i
 		             i++;
 		        }
 

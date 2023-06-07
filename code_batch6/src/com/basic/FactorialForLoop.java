@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FactorialForLoop {
 
 	public static void main(String[] args) {
-		int n;
+		//int n;
 		int fact=1;
 		System.out.println("Enter the number ");
 		Scanner ak=new Scanner (System.in);
@@ -14,7 +14,7 @@ public class FactorialForLoop {
 			{
 			fact=fact*i;
 			}
-			System.out.println(" factorial is" +fact);
+			System.out.println("" +fact);
 		}
 		
 		// TODO Auto-generated method stub

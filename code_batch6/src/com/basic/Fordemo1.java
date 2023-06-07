@@ -11,10 +11,7 @@ public class Fordemo1 {
 				num=i*j;
 				System.out.print(num+ " ");
 			}
-			System.out.println();
-		}
-		
-
-	}
-
+      System.out.println();
+}
+}
 }
