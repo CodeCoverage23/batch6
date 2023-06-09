@@ -1,13 +1,13 @@
 package com.demo;
 class Calculator{
 
-	public double add(int a,float b) {
+	public double add(int a,int b) {
 		double c=a+b;
 		return c;
 		
 	}
 	
-	public double add( float a,int b){
+	public double add( int a,double b){
 		
 		
 		return a+b;
@@ -28,8 +28,8 @@ public class MethodOverloading {
 		// TODO Auto-generated method stub
 
 		Calculator calculator = new Calculator();
-		double add = calculator.add(20, 20.3f);
-		double add2 = calculator.add(20.1f,20);
+		double add = calculator.add(10, 25.6f);
+		double add2 = calculator.add(10,20.5f);
 		System.out.println(" two parameter addition "+add);
 		System.out.println(" three parameter addition "+add2);
 

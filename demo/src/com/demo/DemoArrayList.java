@@ -1,13 +1,14 @@
 package com.demo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class DemoArrayList {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ArrayList<String> al=new ArrayList<>();
+		List<String> al=new ArrayList<>();
 		al.add("pradeep");
 		al.add("gargi");
 		al.add("mohan");

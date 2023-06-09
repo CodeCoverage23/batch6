@@ -41,8 +41,8 @@ public class Employee implements Comparable<Employee> {
 	look at here we cannot overide more than one method because of same name and same signature
 	therefore we can sort only single element in copmparable
 	*/
-	@Override
-	public int compareTo(Employee emp) {
-		return 0 ;
-	}
+//	@Override
+//	public int compareTo(Employee emp) {
+//		return 0 ;
+//	}
 }
