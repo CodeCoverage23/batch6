@@ -1,6 +1,7 @@
 package com.demo.java8;
 
 import java.util.ArrayList;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -19,6 +20,8 @@ public class PredicateDemo {
 //	Predicate<Employee> p2= e->e.salary%2==0;
 
 	Function<Employee,Integer> f=s->s.salary+5000;
+	Consumer<Employee> c= emp->System.out.println("ID="+emp.id+" NAME="+emp.name+" SALARY="+f.apply(emp));
+
 	//predicate function chaining =>
 //	for(Employee e1:l) {
 //		if(p1.and(p2).test(e1)) {
@@ -26,7 +29,8 @@ public class PredicateDemo {
 //	if(p1.nigate().test(e1)) {
 	for(Employee e1:l) {
 	if(p1.test(e1)) {
-		System.out.println("ID="+e1.id+" NAME="+e1.name+" SALARY="+f.apply(e1));
+//		System.out.println("ID="+e1.id+" NAME="+e1.name+" SALARY="+f.apply(e1));
+		c.accept(e1);
 	}
 	}
 		
