@@ -11,7 +11,7 @@ public class StreamDemo {
 		list.add(new Student(105, "nimrit", 29, 80));
 		list.add(new Student(103, "ankit", 25, 67));
 		list.add(new Student(109, "sushil", 28, 35));
-		list.add(new Student(102, "kavya", 23, 39));
+		list.add(new Student(102, "kavya", 23, 35));
 		list.add(new Student(103, "shubham", 24, 40));
 
 		System.out.println(list);
