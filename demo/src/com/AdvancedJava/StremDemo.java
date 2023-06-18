@@ -14,8 +14,6 @@ public class StremDemo {
 		a.add(new StdentStreamDemo(102, "gaurav", 24, 75));
 		a.add(new StdentStreamDemo(104, "rahul", 28, 50));
 		a.add(new StdentStreamDemo(103, "sakshi", 27, 67));
-		a.add(new StdentStreamDemo(103, "sakshi", 27, 67));
-
 		System.out.println(a);
 //FILTER METHOD INTERNALLY USE PREDICATE INTERFACE
 		a.stream().filter(i -> i.mark >= 60).forEach(t -> System.out.println(
