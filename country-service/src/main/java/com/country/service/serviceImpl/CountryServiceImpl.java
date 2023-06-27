@@ -1,5 +1,7 @@
 package com.country.service.serviceImpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,26 @@ public class CountryServiceImpl implements CountryService {
 		countryRepository.save(countryEntity);
 
 		return "Successfully Saved";
+	}
+
+	@Override
+	public List<CountryEntity> getAllCountries() {
+
+		return countryRepository.findAll();
+
+		/*
+		 * List<CountryDto> list = null;
+		 * 
+		 * for (CountryEntity country : countryList) {
+		 * 
+		 * CountryDto countryDto = new CountryDto();
+		 * countryDto.setId(country.getId());
+		 * countryDto.setCountryName(country.getCountryName());
+		 * countryDto.setCountryCapital(country.getCountryName());
+		 * 
+		 * list.add(countryDto); }
+		 */
+
 	}
 
 }
