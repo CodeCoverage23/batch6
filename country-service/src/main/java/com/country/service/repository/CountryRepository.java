@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.country.service.repository.entity.CountryEntity;
 
 @Repository
-public interface CountryRepository extends JpaRepository<CountryEntity, Long> {
+public interface CountryRepository extends JpaRepository<CountryEntity, Integer> {
 
 }

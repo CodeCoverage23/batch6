@@ -1,7 +1,10 @@
 package com.country.service.serviceImpl;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
+import org.hibernate.grammars.hql.HqlParser.ConcatenationExpressionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,23 +32,41 @@ public class CountryServiceImpl implements CountryService {
 	}
 
 	@Override
-	public List<CountryEntity> getAllCountries() {
+	public List<CountryDto> getAllCountries() {
 
-		return countryRepository.findAll();
+		List<CountryEntity> countryList = countryRepository.findAll();
 
-		/*
-		 * List<CountryDto> list = null;
-		 * 
-		 * for (CountryEntity country : countryList) {
-		 * 
-		 * CountryDto countryDto = new CountryDto();
-		 * countryDto.setId(country.getId());
-		 * countryDto.setCountryName(country.getCountryName());
-		 * countryDto.setCountryCapital(country.getCountryName());
-		 * 
-		 * list.add(countryDto); }
-		 */
+		List<CountryDto> list = new ArrayList<>();
 
+		for (CountryEntity country : countryList) {
+
+			CountryDto countryDto = new CountryDto();
+			countryDto.setId(country.getId());
+			countryDto.setCountryName(country.getCountryName());
+			countryDto.setCountryCapital(country.getCountryCapital());
+
+			list.add(countryDto);
+		}
+
+		return list;
+	}
+
+	@Override
+	public CountryDto getCountryById(int countryId) {
+		CountryDto countryDto = new CountryDto();
+		try {
+			CountryEntity country = countryRepository.findById(countryId).get();
+			if (country != null) {
+				countryDto.setId(country.getId());
+				countryDto.setCountryName(country.getCountryName());
+				countryDto.setCountryCapital(country.getCountryCapital());
+			}
+
+		} catch (Exception e) {
+			System.out.println("Country Not found in DB :" + e.getMessage());
+			return null;
+		}
+		return countryDto;
 	}
 
 }

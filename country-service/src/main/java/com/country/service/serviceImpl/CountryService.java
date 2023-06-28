@@ -20,5 +20,7 @@ public interface CountryService {
 	 * 
 	 * @return CountryDto List of countries
 	 */
-	List<CountryEntity> getAllCountries();
+	List<CountryDto> getAllCountries();
+
+	CountryDto getCountryById(int countryId);
 }
