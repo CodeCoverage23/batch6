@@ -15,6 +15,8 @@ import com.country.service.repository.entity.CountryEntity;
 @Service
 public class CountryServiceImpl implements CountryService {
 
+	public static final String DELETE_COUNTRY = "Country is delete";
+
 	@Autowired
 	private CountryRepository countryRepository;
 
@@ -63,10 +65,31 @@ public class CountryServiceImpl implements CountryService {
 			}
 
 		} catch (Exception e) {
-			System.out.println("Country Not found in DB :" + e.getMessage());
+			System.out.println("Country Not found in DB : " + countryId + "	" + e.getMessage());
 			return null;
 		}
 		return countryDto;
+	}
+
+	@Override
+	public CountryEntity updateCountry(CountryEntity entity, int countryId) {
+
+		CountryEntity countryEntity = countryRepository.findById(countryId).get();
+
+		countryEntity.setId(countryId);
+		countryEntity.setCountryName(entity.getCountryName());
+		countryEntity.setCountryCapital(entity.getCountryCapital());
+
+		return countryRepository.save(countryEntity);
+
+	}
+
+	@Override
+	public String deleteCountry(int countryId) {
+
+		countryRepository.deleteById(countryId);
+
+		return DELETE_COUNTRY;
 	}
 
 }

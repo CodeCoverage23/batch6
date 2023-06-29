@@ -7,5 +7,7 @@ import com.country.service.repository.entity.CountryEntity;
 
 @Repository
 public interface CountryRepository extends JpaRepository<CountryEntity, Integer> {
+	
+	//CountryEntity findByStatus();
 
 }

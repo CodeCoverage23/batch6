@@ -23,4 +23,21 @@ public interface CountryService {
 	List<CountryDto> getAllCountries();
 
 	CountryDto getCountryById(int countryId);
+
+	/**
+	 * 
+	 * @param entity
+	 * @param countryId
+	 * @return
+	 */
+	
+	CountryEntity updateCountry(CountryEntity entity, int countryId);
+
+	/**
+	 * This method is use to delete the country from database
+	 * 
+	 * @return "Country is Deleted"
+	 */
+	String deleteCountry(int countryId);
+
 }
