@@ -1,8 +1,12 @@
 package com.management.user.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import  jakarta.persistence.Id;
 import lombok.Data;
 
@@ -23,7 +27,8 @@ public class User {
      @Column(name="ABOUT")
 	private String about;
 	
-	
+	@Transient
+	private List<Rating> ratings = new ArrayList<>();
 	
 	
 	
